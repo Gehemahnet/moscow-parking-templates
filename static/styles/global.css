@@ -1,0 +1,90 @@
+@import "layout.css";
+
+:root {
+    --font-size: 16px;
+    --line-height: 0.5rem;
+    --font-family: Inter, sans-serif;
+    --main-color: #000;
+    --secondary-color: #EA3800;
+    --desktop-width: 1200px;
+    --radius: 5rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    :root {
+        --font-size: 12px;
+        --desktop-width: 100 wv;
+        --radius: 4rem
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    :root {
+        --font-size: 12px;
+        --desktop-width: 100 wv;
+        --radius: 3rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EDEDED;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+.colored-text {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+h1 {
+    font-size: calc(2.5 * var(--font-size));
+    line-height: calc(2.5rem + var(--line-height));
+}
+
+h2 {
+    font-size: calc(2 * var(--font-size));
+    line-height: calc(2rem + var(--line-height));
+}
+
+h3 {
+    font-size: calc(1.75 * var(--font-size));
+    line-height: calc(1.75rem + var(--line-height));
+}
+
+h4 {
+    font-size: calc(1.5 * var(--font-size));
+    line-height: calc(1.5rem + var(--line-height));
+}
+
+h5 {
+    font-size: calc(1.25 * var(--font-size));
+    line-height: calc(1.25rem + var(--line-height));
+}
+
+h6 {
+    font-size: calc(var(--font-size));
+    line-height: calc(1rem + var(--line-height));
+}
+
+button, input, select {
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

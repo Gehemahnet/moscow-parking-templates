@@ -1,0 +1,234 @@
+
+.header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: #EDEDED;
+}
+
+.header.scrolled {
+    background: #EDEDEDD8;
+    transition: .3s;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7.5rem;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__nav-link {
+    font-size: 1.25rem;
+}
+
+.header__nav-link.active {
+    color: var(--secondary-color);
+}
+
+.header__nav-burger {
+    display: none;
+    background: url("../icons/burger.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 4rem 7.5rem;
+}
+
+.footer__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    font-weight: 600;
+}
+
+.footer__subtitle {
+    font-weight: 400;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__links-item {
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: var(--desktop-width);
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    .header__content {
+        padding: 2em 2em;
+    }
+
+    .header__title {
+        font-size: 1.5em;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav.transition {
+        display: flex;
+        animation: hide .5s forwards;
+    }
+
+    @keyframes hide {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+    }
+    .header__nav.active {
+        display: flex;
+        animation: show .5s forwards;
+    }
+
+    @keyframes show {
+        0% {
+            transform: translate(150%);
+        }
+        100% {
+
+            transform: translateY(0);
+        }
+    }
+    .header__nav-link {
+        font-size: 1rem;
+    }
+
+    .header__nav-burger {
+        display: block;
+        transition: .5s;
+
+    }
+
+    .header__nav-burger.active {
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+
+    .footer__content {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .footer__title {
+        font-size: 1.25rem;
+    }
+
+    .footer__subtitle {
+        font-size: 1rem;
+        width: 35%;
+    }
+
+    .footer__links {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .header__content {
+        height: 10em;
+        padding: 1.25rem;
+        gap: 1em;
+    }
+
+    .header__title {
+        font-size: 1rem;
+    }
+    .header__nav {
+        display: none;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    .header__nav.transition {
+        display: flex;
+        animation: hide .5s forwards;
+    }
+
+    @keyframes hide {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+    }
+    .header__nav.active {
+        display: flex;
+        animation: show .5s forwards;
+    }
+
+    @keyframes show {
+        0% {
+            transform: translate(150%);
+        }
+        100% {
+
+            transform: translateY(0);
+        }
+    }
+    .header__nav-link {
+        font-size: 1rem;
+        max-width: 33%;
+    }
+
+    .header__nav-burger {
+        display: block;
+        transition: .5s;
+        width: 1em;
+        height: 1em;
+    }
+
+    .header__nav-burger.active {
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+
+    .footer__content {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .footer__title {
+        font-size: 1rem;
+        min-width: 12rem;
+    }
+
+    .footer__subtitle {
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+    .footer__links {
+        font-size: 1em;
+    }
+}

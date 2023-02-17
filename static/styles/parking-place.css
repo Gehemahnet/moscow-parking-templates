@@ -1,0 +1,20 @@
+@import "global.css";
+
+.parking-place {
+    border: 1px solid black;
+    border-radius: 8px;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 33%;
+    padding: 1.5rem;
+}
+.parking-place__img {
+    height: 20rem;
+    width: 100%;
+}
+.parking-place__description {
+    display: flex;
+    flex-direction: column;
+}
