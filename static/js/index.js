@@ -6,12 +6,18 @@ function initialization() {
 }
 
 function showHeaderNavigation() {
+    let header = document.querySelector('.header')
     let navigation = document.querySelector('.header__nav')
     let burger = document.querySelector('.header__nav-burger')
+    let overlay = document.querySelector('.overlay')
     if (!navigation.classList.contains('active')) {
+        overlay.style.display = 'block'
+        overlay.addEventListener('click', showHeaderNavigation)
         navigation.classList.toggle('active')
         burger.classList.toggle('active')
     } else {
+        overlay.style.display = 'none'
+        overlay.removeEventListener('click', showHeaderNavigation)
         burger.classList.toggle('active')
         navigation.classList.add('transition')
         navigation.classList.remove('active')
@@ -22,7 +28,7 @@ function showHeaderNavigation() {
 }
 
 function headerScrolling() {
-    let header = document.querySelector('header')
+    let header = document.querySelector('.header')
     if (window.scrollY > 0) {
         header.classList.add('scrolled')
     } else {
