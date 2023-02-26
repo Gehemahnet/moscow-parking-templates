@@ -1,19 +1,58 @@
+const places = [
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 150,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 150,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 450,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 550,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 650,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 2550,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
+    {
+        address: "Мне-Нужна-Длинная-Улица 48, к. 1",
+        station: "Китай-Город",
+        price: 1550,
+        cover: "static/images/catalog-card.jpg",
+        link: ""
+    },
 
-let button = document.querySelector('.scroll-button')
-button.addEventListener('click', () => {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-})
-window.addEventListener('scroll', toggleScrollBackButton)
+]
+const stations = ['Таганская', 'Пушкинская', 'Рижская', 'Ещё какая-то', 'Вообще крутая станция']
 
-function toggleScrollBackButton() {
-    console.log(window.scrollY)
-    if (window.scrollY> 600) {
-        button.style.display = 'flex'
-    } else {
-        button.style.display = 'none'
-    }
-}
+
 const rangeSlider = document.querySelector('.catalog__filters-range-container')
 if (rangeSlider) {
     noUiSlider.create(rangeSlider, {
@@ -32,6 +71,7 @@ if (rangeSlider) {
     rangeSlider.noUiSlider.on('update', (values, handle) => {
         snapValues[handle].innerHTML = values[handle].split('.')[0]
     })
+    rangeSlider.noUiSlider.on('change', filterPrice)
 }
 
 function toggleFilters() {
@@ -47,12 +87,41 @@ function filterStations() {
 }
 
 function filterPrice() {
-//     Здесь будет функция для считывания диапазона цен с ренжа и отправкой на сервер
+    let startPrice = Number(document.getElementById('startPrice').textContent)
+    let endPrice = Number(document.getElementById('endPrice').textContent)
+    let filteredData = places.filter(card => card.price >= startPrice && card.price <= endPrice)
+    unMountCards()
+    renderCards(filteredData)
 }
 
-const stations = ['Таганская', 'Пушкинская', 'Рижская', 'Ещё какая-то', 'Вообще крутая станция']
-initializeStations()
 
+function renderCards(data) {
+    if (data) {
+        let root = document.querySelector('.catalog__cards')
+        data.forEach(card => {
+            let place = document.createElement('a')
+            place.href = card.link
+            place.className = 'catalog__cards-item'
+            place.innerHTML = `
+              <img src="${card.cover}" alt="" class="catalog__cards-cover">
+              <div class="catalog__cards-description">
+                <h5 class="catalog__cards-address">
+                  ${card.address}
+                </h5>
+                <h6 class="catalog__cards-station">${card.station}</h6>
+                <p class="catalog__cards-price">${card.price} руб./час</p>
+              </div>
+              `
+            root.appendChild(place)
+        })
+    } else {
+
+    }
+}
+function unMountCards() {
+    let root = document.querySelector('.catalog__cards')
+    Array.from(root.childNodes).forEach(card => root.removeChild(card))
+}
 function showStationsDropdown() {
     let dropdown = document.querySelector('.catalog__filters-dropdown')
     dropdown.classList.add('active')
@@ -115,3 +184,5 @@ window.addEventListener('click', (e) => {
 })
 
 
+renderCards(places)
+initializeStations()

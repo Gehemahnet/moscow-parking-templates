@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="902b1642-d68c-4b8f-a97a-7628cbe7ad26" name="Changes" comment="Catalog started">
-      <change afterPath="$PROJECT_DIR$/static/icons/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/scroll-button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/map.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/nouislider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/homeButtonScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-place.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icons/magnifying-glass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/magnifying-glass.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -71,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1677328928848</updated>
       <workItem from="1677328930059" duration="21646000" />
-      <workItem from="1677403926036" duration="3349000" />
+      <workItem from="1677403926036" duration="4847000" />
+      <workItem from="1677425775512" duration="5106000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
