@@ -1,0 +1,50 @@
+[class*="zoom"] {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 !important;
+    width: 76px !important;
+    box-sizing: border-box !important;
+}
+[class*="controls__control"] {
+    inset: 104px 1116px !important;
+    margin-left: 0 !important;
+}
+[class*="controls__control_toolbar"] {
+    inset: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: block !important;
+    left: 1116px !important;
+    height: 76px !important;
+    width: 76px !important;
+}
+[class*="controls__control_toolbar"] [title*="Определить ваше местоположение"] {
+    width: 76px;
+    height: 76px;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color) !important;
+}
+[class*="controls__control_toolbar"] [title*="Определить ваше местоположение"] [class*="float-button-icon"] {
+    display: inherit !important;
+    position: static !important;
+}
+[class*="zoom__button"] {
+    height: 76px !important ;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 0 !important;
+}
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+[class*="zoom__scale"] {
+    display: none !important;
+}
+.map__content > ymaps {
+    border-radius: 0 0 5rem 5rem;
+    overflow: hidden;
+}

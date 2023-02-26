@@ -9,7 +9,9 @@
     --desktop-width: 1200px;
     --radius: 5rem;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 @media screen and (min-width: 600px) and (max-width: 1199px) {
     :root {
         --font-size: 12px;
@@ -43,6 +45,18 @@ a {
     color: var(--main-color);
 }
 
+.scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    height: 54px;
+    width: 78px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--secondary-color);
+}
 
 .colored-text {
     color: var(--secondary-color);
@@ -88,6 +102,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 button {
     cursor: pointer;
 }

@@ -1,6 +1,14 @@
 ymaps.ready(init);
 function init(){
-    const position = navigator.geolocation.getCurrentPosition((position) =>  position.coords)
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(gotPosition, positionFailed)
+    }
+    function gotPosition(position) {
+        return position
+    }
+    function positionFailed() {
+
+    }
     const myMap = new ymaps.Map("map", {
         // Координаты центра карты.
         // Порядок по умолчанию: «широта, долгота».
@@ -11,4 +19,10 @@ function init(){
         // от 0 (весь мир) до 19.
         zoom: 10
     });
+    myMap.controls
+        .remove('searchControl')
+        .remove('trafficControl')
+        .remove('typeSelector')
+        .remove('fullscreenControl')
+        .remove('rulerControl')
 }
