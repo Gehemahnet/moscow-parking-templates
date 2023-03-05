@@ -13,9 +13,12 @@
 <header class="header">
   <div class="wrapper">
     <div class="header__content">
-      <h2 class="header__title">
-        Парковки Москвы
-      </h2>
+      <a class="header__logo" href="index.html">
+        <img src="static/icons/logo.svg" alt="">
+        <h2 class="header__title">
+          Парковки Москвы
+        </h2>
+      </a>
       <nav class="header__nav">
         <a data-href-to="home" href="index.html" class="header__nav-link">
           Главная
@@ -23,7 +26,7 @@
         <a data-href-to="catalog" href="catalog.html" class="header__nav-link">
           Каталог
         </a>
-        <a data-href-to="profile" href="" class="header__nav-link">
+        <a data-href-to="profile" href="profile.html" class="header__nav-link">
           Личный кабинет
         </a>
       </nav>
@@ -31,7 +34,11 @@
     </div>
   </div>
 </header>
+<!--Оверлей для хедера-->
 <div class="overlay"></div>
+<!--Контейнер для модалки. Очень "классно" использовать вместо нормальной библиотеки нативный JS-->
+<div class="modal"></div>
+
 <main class="main">
 
   <section class="intro">
@@ -106,7 +113,7 @@
         <li>Парковка без переплат и скрытых комиссий</li>
         <li>Конфиденциальность данных и безопасность</li>
       </ul>
-      <button class="drivers__button">Найти парковку</button>
+      <a class="drivers__button" href="catalog.html">Найти парковку</a>
     </div>
   </section>
   <!--Владельцам-->
@@ -120,7 +127,7 @@
         <li>Юридическая безопасность и конфиденциальность данных</li>
         <li>Техническая поддержка 24/7</li>
       </ul>
-      <button class="holders__button">Сдать место</button>
+      <a class="holders__button" href="profile.html">Сдать место</a>
 
     </div>
   </section>
@@ -170,6 +177,6 @@
   </div>
 </footer>
 <script src="static/js/index.js"></script>
-<script src="static/js/map.js"></script>
+<script src="static/js/user.js"></script>
 </body>
 </html>

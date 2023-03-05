@@ -75,6 +75,7 @@ if (rangeSlider) {
 }
 
 function toggleFilters() {
+    document.querySelector('.catalog__search-block-filters').classList.toggle('active')
     let filters = document.querySelector('.catalog__filters')
     let cards = document.querySelector('.catalog__cards')
     filters.classList.toggle('active')

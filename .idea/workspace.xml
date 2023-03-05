@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="902b1642-d68c-4b8f-a97a-7628cbe7ad26" name="Changes" comment="Catalog started">
-      <change afterPath="$PROJECT_DIR$/static/js/homeButtonScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/checkbox-checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/checkbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/close-modal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/eye-off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/magnifying-glass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/magnifying-glass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icons/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/favicon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/homeButtonScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/homeButtonScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/layout.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,9 +55,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/html/moscow-parking/static/icons&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,6 +68,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\html\moscow-parking\static\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\html\moscow-parking" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Catalog started">
@@ -68,7 +93,12 @@
       <updated>1677328928848</updated>
       <workItem from="1677328930059" duration="21646000" />
       <workItem from="1677403926036" duration="4847000" />
-      <workItem from="1677425775512" duration="5106000" />
+      <workItem from="1677425775512" duration="5983000" />
+      <workItem from="1677520970973" duration="1588000" />
+      <workItem from="1677873356290" duration="96000" />
+      <workItem from="1677928373740" duration="5978000" />
+      <workItem from="1677936625621" duration="17273000" />
+      <workItem from="1678010327800" duration="6223000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

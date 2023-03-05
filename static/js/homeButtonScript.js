@@ -1,5 +1,6 @@
 let button = document.querySelector('.scroll-button')
 button.addEventListener('click', () => {
+    button.classList.toggle('active')
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
 })

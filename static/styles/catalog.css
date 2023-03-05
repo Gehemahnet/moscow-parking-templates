@@ -67,6 +67,9 @@
     background: var(--secondary-color);
     border-radius: 0.25rem;
 }
+.catalog__search-block-filters.active {
+  background: #BB2D00;
+}
 
 .catalog__filters {
     position: absolute;
