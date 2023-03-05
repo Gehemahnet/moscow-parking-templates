@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="902b1642-d68c-4b8f-a97a-7628cbe7ad26" name="Changes" comment="Catalog started">
-      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/checkbox-checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/checkbox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/close-modal.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/eye-off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/eye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/error.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/letter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/icons/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/icons/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/homeButtonScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/homeButtonScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/layout.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +79,8 @@
       <workItem from="1677873356290" duration="96000" />
       <workItem from="1677928373740" duration="5978000" />
       <workItem from="1677936625621" duration="17273000" />
-      <workItem from="1678010327800" duration="6223000" />
+      <workItem from="1678010327800" duration="6841000" />
+      <workItem from="1678029372431" duration="10238000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
