@@ -1,0 +1,79 @@
+.label {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.select,
+.input,
+.textarea {
+    background: #ffffff;
+    padding: 1rem 1.25rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    font-family: var(--font-family);
+}
+
+.option {
+    color: #000;
+}
+
+.select,
+.input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.button {
+    padding: 15px 20px;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.button_primary {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.button_secondary {
+    color: var(--secondary-color);
+}
+
+.button_edit-profile {
+    align-self: flex-end;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    .label {
+        font-size: 14px;
+    }
+
+    .input,
+    .button,
+    .select,
+    .option,
+    .textarea {
+        font-size: 15px;
+        padding: 10px 15px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .label {
+        font-size: 14px;
+    }
+
+    .input,
+    .button,
+    .select,
+    .option,
+    .textarea {
+        font-size: 14px;
+        padding: 10px 15px;
+        height: 38px;
+    }
+}

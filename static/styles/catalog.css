@@ -6,7 +6,6 @@
     width: var(--desktop-width);
     height: 35.75rem;
     margin: 0 auto;
-
 }
 
 .map__content {
@@ -68,7 +67,7 @@
     border-radius: 0.25rem;
 }
 .catalog__search-block-filters.active {
-  background: #BB2D00;
+    background: #bb2d00;
 }
 
 .catalog__filters {
@@ -165,7 +164,6 @@
     margin-left: 1.5rem;
 }
 
-
 .catalog__filters-tags {
     width: 100%;
     margin-top: 1rem;
@@ -250,6 +248,12 @@
     color: rgba(26, 26, 26, 0.6);
 }
 
+.catalog__cards-time {
+    font-weight: 500;
+    line-height: 18px;
+    font-size: 1.25rem;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1199px) {
     .catalog__content {
         margin: 0 20px;
@@ -322,6 +326,9 @@
     }
     .catalog__cards-price {
         line-height: 18px;
+        font-size: 15px;
+    }
+    .catalog__cards-time {
         font-size: 15px;
     }
 }
@@ -407,5 +414,8 @@
     .catalog__cards-cover {
         width: 8rem;
         height: 100%;
+    }
+    .catalog__cards-time {
+        font-size: 14px;
     }
 }

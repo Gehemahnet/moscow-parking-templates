@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Парковки Москвы</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/catalog.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/profile.css" />
+    <link rel="icon" type="image/x-icon" href="static/icons/favicon.svg" />
+  </head>
+  <body data-location="profile">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <a class="header__logo" href="index.html">
+            <img src="static/icons/logo.svg" alt="" />
+            <h2 class="header__title">Парковки Москвы</h2>
+          </a>
+
+          <nav class="header__nav">
+            <a data-href-to="home" href="index.html" class="header__nav-link">
+              Главная
+            </a>
+            <a
+              data-href-to="catalog"
+              href="catalog.html"
+              class="header__nav-link"
+            >
+              Каталог
+            </a>
+            <a
+              data-href-to="profile"
+              href="profile.html"
+              class="header__nav-link"
+            >
+              Личный кабинет
+            </a>
+          </nav>
+          <button
+            onclick="showHeaderNavigation()"
+            class="header__nav-burger"
+          ></button>
+        </div>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <div class="modal"></div>
+
+    <main class="main">
+      <button class="scroll-button">
+        <img src="static/icons/scroll-button.svg" alt="" />
+      </button>
+      <section class="container">
+        <div class="wrapper">
+          <h2 class="title">Личный кабинет</h2>
+          <div class="profile">
+            <form class="profile__form">
+              <div class="profile__general">
+                <h5 class="subtitle">Общие сведения</h5>
+
+                <label class="label label_profile">
+                  Имя Фамилия <br />
+                  <input
+                    id="user-name"
+                    placeholder="Иван Иванов"
+                    class="input input_profile"
+                  />
+                </label>
+
+                <label class="label label_profile">
+                  E-mail <br />
+                  <input
+                    id="user-email"
+                    placeholder="example@gmail.ru"
+                    class="input input_profile"
+                  />
+                </label>
+
+                <label class="label label_profile">
+                  Пароль <br />
+                  <input
+                    type="password"
+                    id="user-password"
+                    placeholder="****************"
+                    class="input input_profile"
+                  />
+                </label>
+              </div>
+
+              <div class="payment-card">
+                <h5 class="subtitle">Платежные данные</h5>
+
+                <label class="label label_profile">
+                  Номер карты<br />
+                  <input
+                    id="card-number"
+                    placeholder="**** **** **** 1234"
+                    class="input input_profile"
+                  />
+                </label>
+
+                <div class="payment-card__date-cvc">
+                  <label class="label label_profile">
+                    Дата<br />
+                    <input
+                      id="card-expiration-date"
+                      placeholder="**/**"
+                      class="input input_profile"
+                    />
+                  </label>
+
+                  <label class="label label_profile">
+                    CVC<br />
+                    <input
+                      id="card-cvc"
+                      placeholder="***"
+                      class="input input_profile"
+                    />
+                  </label>
+                </div>
+
+                <button class="button button_primary button_profile-edit">
+                  Редактировать
+                </button>
+              </div>
+            </form>
+
+            <div class="profile__parking">
+              <ul class="tab">
+                <li class="tab__item tab__item_activ">
+                  <button class="button button_tab"><h5>Водитель</h5></button>
+                </li>
+                <li class="tab__item">
+                  <button class="button button_tab"><h5>Владелец</h5></button>
+                </li>
+              </ul>
+
+              <h5 class="subtitle sudtitle__parking">Текущая парковка</h5>
+
+              <div class="catalog catalog_profile">
+                <!-- карточка места -->
+                <div class="catalog__cards">
+                  <a
+                    href="parking-place-info.html"
+                    class="catalog__cards-item catalog__cards-item_profile"
+                  >
+                    <img
+                      src="static/images/catalog-card.jpg"
+                      alt=""
+                      class="catalog__cards-cover"
+                    />
+                    <div class="catalog__cards-description">
+                      <h5 class="catalog__cards-address">
+                        Мне-Нужна-Длинная-Улица 48, к. 1
+                      </h5>
+                      <h6 class="catalog__cards-station">Китай-Город</h6>
+                      <p class="catalog__cards-price">550 руб./час</p>
+                      <p class="catalog__cards-time">Занято с 19.00, 28 дек</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <button
+                class="button button_secondary button_add-parking"
+                onclick="location.href='parking-place-create.html';"
+              >
+                Добавить место
+              </button>
+
+              <h5 class="subtitle">История</h5>
+              <p class="history">
+                <span class="history__date">27 дек. 18.23 - 19.54</span>
+                <span class="history__price">300 руб.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+          <div class="footer__top">
+            <h5 class="footer__title">Парковки Москвы</h5>
+            <h6 class="footer__subtitle">
+              Сервис для краткосрочной аренды машиномест в Москве
+            </h6>
+          </div>
+          <div class="footer__links">
+            <a data-href-to="home" href="" class="footer__links-item"
+              >Условия использования</a
+            >
+            <a data-href-to="catalog" href="" class="footer__links-item"
+              >Договор оферты</a
+            >
+            <a data-href-to="support" href="" class="footer__links-item"
+              >Служба поддержки</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="static/plugins/noUiSlider-15.7.0/dist/nouislider.js"></script>
+    <script src="static/js/homeButtonScript.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/user.js"></script>
+  </body>
+</html>
