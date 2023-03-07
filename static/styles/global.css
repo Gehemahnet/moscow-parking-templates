@@ -1,15 +1,16 @@
 @import "layout.css";
 @import "modal.css";
+@import "form.css";
 
 :root {
   --font-size: 16px;
   --line-height: 0.5rem;
   --font-family: Inter, sans-serif;
   --main-color: #000;
-  --secondary-color: #EA3800;
+  --secondary-color: #ea3800;
   --desktop-width: 1200px;
   --radius: 5rem;
-  --active--color: #EE6033;
+  --active--color: #ee6033;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
   :root {
     --font-size: 12px;
     --desktop-width: 100 wv;
-    --radius: 4rem
+    --radius: 4rem;
   }
 }
 
@@ -39,7 +40,7 @@ html {
 }
 
 body {
-  background: #EDEDED;
+  background: #ededed;
   font-size: var(--font-size);
   font-family: var(--font-family);
 }
@@ -97,7 +98,9 @@ h6 {
   line-height: calc(1rem + var(--line-height));
 }
 
-button, input, select {
+button,
+input,
+select {
   background: none;
   border: none;
 }

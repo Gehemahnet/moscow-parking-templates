@@ -1,0 +1,105 @@
+@import "global.css";
+@import "nouislider.css";
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    column-gap: 7.375rem;
+}
+
+.profile__form {
+    flex-basis: 23.375rem;
+}
+
+.profile__general {
+    margin-bottom: 3rem;
+}
+
+.profile__parking {
+    width: 29.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-card__date-cvc {
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.button_profile-edit {
+    float: right;
+    width: 192px;
+    margin-top: 2rem;
+}
+
+.catalog__cards-item_profile {
+    height: auto;
+}
+.catalog_profile {
+    margin: 0;
+}
+.button_add-parking {
+    align-self: flex-end;
+}
+
+.sudtitle__parking {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    .profile__title {
+        line-height: 24px;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        column-gap: 7.375rem;
+    }
+    .profile__form {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.66rem;
+        flex-basis: auto;
+    }
+    .profile__parking {
+        width: 100%;
+    }
+    .profile__general,
+    .payment-card {
+        flex: 1;
+    }
+    .button_profile-edit {
+        float: right;
+        width: 192px;
+        margin-top: 1.5rem;
+    }
+    .payment-card__date-cvc {
+        column-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .profile__title {
+        line-height: 24px;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        column-gap: 7.375rem;
+    }
+    .profile__general {
+        margin-bottom: 2rem;
+    }
+    .button_profile-edit {
+        float: right;
+        width: auto;
+        margin-top: 1rem;
+    }
+    .profile__form {
+        flex-basis: auto;
+    }
+    .profile__parking {
+        width: 100%;
+    }
+}
