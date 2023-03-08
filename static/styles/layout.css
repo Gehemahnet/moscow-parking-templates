@@ -17,8 +17,8 @@
 }
 
 .header.scrolled {
-  background: #EDEDEDD8;
-  transition: .3s;
+  background: #edededd8;
+  transition: 0.3s;
 }
 
 .header__content {
@@ -102,6 +102,46 @@
   background: rgba(26, 26, 26, 0.25);
 }
 
+.container {
+  max-width: 60rem;
+  margin: 2.5rem auto;
+}
+
+.container .wrapper {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+}
+.tab__item {
+  display: block;
+  text-align: center;
+  flex: 1;
+  border-bottom: solid 1px black;
+}
+.tab__item_activ {
+  border-bottom: solid 4px var(--secondary-color);
+}
+.button_tab {
+  width: 100%;
+}
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1199px) {
   .header__content {
     padding: 1.25rem 2em;
@@ -120,7 +160,7 @@
   }
 
   .header__nav {
-    background: #EDEDEDD8;
+    background: #edededd8;
     display: none;
     gap: 1em;
     width: 100%;
@@ -134,7 +174,7 @@
 
   .header__nav.transition {
     display: flex;
-    animation: hide .5s forwards;
+    animation: hide 0.5s forwards;
   }
 
   @keyframes hide {
@@ -149,7 +189,7 @@
   }
   .header__nav.active {
     display: flex;
-    animation: show .5s forwards;
+    animation: show 0.5s forwards;
   }
 
   @keyframes show {
@@ -170,12 +210,12 @@
 
   .header__nav-burger {
     display: block;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .header__nav-burger.active {
     transform: rotate(90deg);
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .footer__content {
@@ -193,6 +233,15 @@
 
   .footer__links {
     font-size: 1rem;
+  }
+
+  .subtitle {
+    margin: 10px 0 20px;
+    line-height: 18px;
+  }
+  .container .wrapper {
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
 }
 
@@ -217,7 +266,7 @@
   }
 
   .header__nav {
-    background: #EDEDEDD8;
+    background: #edededd8;
     display: none;
     gap: 1em;
     width: 100%;
@@ -231,7 +280,7 @@
 
   .header__nav.transition {
     display: flex;
-    animation: hide .5s forwards;
+    animation: hide 0.5s forwards;
   }
 
   @keyframes hide {
@@ -246,7 +295,7 @@
   }
   .header__nav.active {
     display: flex;
-    animation: show .5s forwards;
+    animation: show 0.5s forwards;
   }
 
   @keyframes show {
@@ -263,14 +312,14 @@
 
   .header__nav-burger {
     display: block;
-    transition: .5s;
+    transition: 0.5s;
     width: 1.5rem;
     height: 1.5rem;
   }
 
   .header__nav-burger.active {
     transform: rotate(90deg);
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .footer__content {
@@ -289,5 +338,14 @@
 
   .footer__links {
     font-size: 1em;
+  }
+
+  .subtitle {
+    margin: 10px 0 20px;
+    line-height: 18px;
+  }
+  .container .wrapper {
+    width: calc(100% - 40px);
+    margin: 0 20px;
   }
 }
