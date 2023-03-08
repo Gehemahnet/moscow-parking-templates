@@ -1,0 +1,619 @@
+@import "global.css";
+@import "nouislider.css";
+
+.main > .wrapper {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  max-width: 960px;
+  gap: 120px;
+}
+
+section > .wrapper {
+  width: auto;
+}
+
+.profile {
+}
+
+.profile__content {
+
+}
+
+.profile__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 10px;
+}
+
+.profile__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 376px;
+}
+
+.profile__user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.profile__form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.profile__form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.profile__form-input {
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.profile__payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile__form-double-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile__form-double-field .profile__form-field {
+  width: 178px;
+}
+
+.profile__form-edit-button {
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  background: var(--secondary-color);
+  border-radius: 7px;
+  align-self: flex-end;
+  margin-top: 30px;
+}
+
+.parking {
+
+}
+
+.parking__tabs {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.parking__tabs-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 14px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #000000;
+  width: 50%;
+}
+
+.parking__tabs-button.active {
+  border-bottom: 4px solid #EA3800;
+}
+
+.parking__tab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.parking__tab-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px
+}
+
+.parking__tab-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 24px;
+}
+
+.parking__cards-item {
+  display: flex;
+  gap: 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.parking__cards-cover {
+  height: 100%;
+}
+
+.parking__cards-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 10px 0;
+}
+
+.parking__cards-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking__cards-station {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(26, 26, 26, 0.6);
+}
+
+.parking__cards-price {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking__cards-status {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking__tab-link {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-self: flex-end;
+}
+
+.parking__tab-history {
+  display: flex;
+  flex-direction: column;
+}
+
+.parking__history-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parking__history-item span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .main > .wrapper {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    gap: 120px;
+  }
+
+  section > .wrapper {
+  }
+
+  .profile {
+    margin: 0 30px;
+  }
+
+  .profile__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile__title {
+    font-style: normal;
+    max-width: 200px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .profile__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  .profile__form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .profile__user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  .profile__form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .profile__form-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .profile__form-input {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .profile__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile__form-double-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .profile__form-double-field .profile__form-field {
+    width: 128px;
+  }
+
+  .profile__form-edit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    background: var(--secondary-color);
+    border-radius: 7px;
+    margin-top: 0;
+  }
+
+  .parking {
+    margin: 0 30px;
+  }
+
+  .parking__tabs {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .parking__tabs-button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: 1px solid #000000;
+    width: 50%;
+  }
+
+  .parking__tabs-button.active {
+    border-bottom: 4px solid #EA3800;
+  }
+
+  .parking__tab {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .parking__tab-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__tab-cards {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .parking__cards-item {
+    max-height: 116px;
+    width: 100%;
+  }
+
+  .parking__cards-cover {
+    height: 100%;
+  }
+
+  .parking__cards-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 15px 10px 15px 0;
+  }
+
+  .parking__cards-address {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking__cards-station {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__cards-price {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking__cards-status {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking__tab-link {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking__tab-history {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .parking__history-item {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 280px;
+  }
+
+  .parking__history-item span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .main > .wrapper {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    gap: 120px;
+  }
+
+  section > .wrapper {
+  }
+
+  .profile {
+    margin: 0 30px;
+  }
+
+  .profile__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile__title {
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+
+  .profile__subtitle {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+
+  .profile__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .profile__user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  .profile__form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .profile__form-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .profile__form-input {
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .profile__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .profile__form-double-field {
+    gap: 10px;
+  }
+
+  .profile__form-double-field .profile__form-field {
+    width: 120px;
+  }
+
+  .profile__form-edit-button {
+    padding: 10px 15px;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    background: var(--secondary-color);
+    border-radius: 7px;
+    margin-top: 0;
+  }
+
+  .parking {
+    margin: 0 30px;
+  }
+
+  .parking__tabs {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .parking__tabs-button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: 1px solid #000000;
+    width: 50%;
+  }
+
+  .parking__tabs-button.active {
+    border-bottom: 4px solid #EA3800;
+  }
+
+  .parking__tab {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .parking__tab-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__tab-cards {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .parking__cards-item {
+    max-height: 116px;
+    width: 100%;
+  }
+
+  .parking__cards-cover {
+    height: 70%;
+  }
+
+  .parking__cards-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 10px 10px 10px 0;
+  }
+
+  .parking__cards-address {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__cards-station {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .parking__cards-price {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__cards-status {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__tab-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking__tab-history {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .parking__history-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .parking__history-item span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+}

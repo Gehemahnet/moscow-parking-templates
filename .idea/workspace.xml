@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="902b1642-d68c-4b8f-a97a-7628cbe7ad26" name="Changes" comment="Catalog started">
-      <change afterPath="$PROJECT_DIR$/letter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking-place-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking-place-info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icons/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/parking-place.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/catalog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/parking-place.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/parking-place.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,26 +48,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/html/moscow-parking/static/icons&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/projects/html/moscow-parking/static/icons",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\html\moscow-parking\static\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\html\moscow-parking\static\icons" />
       <recent name="D:\projects\html\moscow-parking" />
     </key>
   </component>
@@ -80,7 +96,12 @@
       <workItem from="1677928373740" duration="5978000" />
       <workItem from="1677936625621" duration="17273000" />
       <workItem from="1678010327800" duration="6841000" />
-      <workItem from="1678029372431" duration="10238000" />
+      <workItem from="1678029372431" duration="10865000" />
+      <workItem from="1678207883682" duration="539000" />
+      <workItem from="1678217545399" duration="733000" />
+      <workItem from="1678256246941" duration="12171000" />
+      <workItem from="1678271396596" duration="215000" />
+      <workItem from="1678277146808" duration="13279000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

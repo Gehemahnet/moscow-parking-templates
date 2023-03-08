@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content=""/>
+  <meta name="author" content="Konstantin Volik"/>
+  <title>Парковки Москвы</title>
+  <link rel="stylesheet" type="text/css" href="static/styles/catalog.css"/>
+  <link rel="stylesheet" type="text/css" href="static/styles/parking-place.css"/>
+  <link rel="icon" type="image/x-icon" href="static/icons/favicon.svg"/>
+</head>
+<body>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__content">
+      <a class="header__logo" href="index.html">
+        <img src="static/icons/logo.svg" alt=""/>
+        <h2 class="header__title">Парковки Москвы</h2>
+      </a>
+
+      <nav class="header__nav">
+        <a  href="index.html" class="header__nav-link">
+          Главная
+        </a>
+        <a
+            href="catalog.html"
+            class="header__nav-link"
+        >
+          Каталог
+        </a>
+        <a
+            href="profile.html"
+            class="header__nav-link"
+        >
+          Личный кабинет
+        </a>
+      </nav>
+      <button
+          onclick="showHeaderNavigation()"
+          class="header__nav-burger"
+      ></button>
+    </div>
+  </div>
+</header>
+<div class="overlay"></div>
+<div class="modal"></div>
+
+<main class="main">
+
+  <button class="scroll-button">
+    <img src="static/icons/scroll-button.svg" alt=""/>
+  </button>
+  <section class="parking-place">
+    <div class="wrapper">
+      <div class="parking-place__content">
+        <div class="parking-place__cover">
+          <img src="static/images/catalog-card-big.jpg" alt="">
+        </div>
+        <div class="parking-place__description">
+          <h5 class="parking-place__owner">Владелец - Иван Иванов</h5>
+          <h2 class="parking-place__address">Мне-Нужна-Длинная-Улица 48, к. 1</h2>
+          <h3 class="parking-place__station">Театральная</h3>
+          <div class="parking-place__actions">
+            <button class="parking-place__button-rent">Арендовать</button>
+            <button class="parking-place__button-back" onclick="back()">Назад</button>
+          </div>
+          <h5 class="parking-place__description-title">Описание</h5>
+          <p class="parking-place__description-detailed">
+            Уютное место под деревом. Прям очень замечательное. Прям
+            настолько замечательное, что я не могу перестать об этом
+            говорить. Нет, правда, не недооценивайте уютность этого места! А
+            еще позвоните мне и подарите мне печеньку.
+          </p>
+          <button class="parking-place__button-expanding" onclick="toggleDescription()">Раскрыть целиком</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="catalog">
+    <div class="wrapper">
+      <div class="catalog__content">
+
+        <h2 class="catalog__title">Близкие места</h2>
+        <div class="catalog__cards">
+          <a href="" class="catalog__cards-item">
+            <img
+                src="static/images/catalog-card.jpg"
+                alt=""
+                class="catalog__cards-cover"
+            />
+            <div class="catalog__cards-description">
+              <h5 class="catalog__cards-address">
+                Мне-Нужна-Длинная-Улица 48, к. 1
+              </h5>
+              <h6 class="catalog__cards-station">Китай-Город</h6>
+              <p class="catalog__cards-price">550 руб./час</p>
+            </div>
+          </a>
+          <a href="" class="catalog__cards-item">
+            <img
+                src="static/images/catalog-card.jpg"
+                alt=""
+                class="catalog__cards-cover"
+            />
+            <div class="catalog__cards-description">
+              <h5 class="catalog__cards-address">
+                Мне-Нужна-Длинная-Улица 48, к. 1
+              </h5>
+              <h6 class="catalog__cards-station">Китай-Город</h6>
+              <p class="catalog__cards-price">550 руб./час</p>
+            </div>
+          </a>
+          <a href="" class="catalog__cards-item">
+            <img
+                src="static/images/catalog-card.jpg"
+                alt=""
+                class="catalog__cards-cover"
+            />
+            <div class="catalog__cards-description">
+              <h5 class="catalog__cards-address">
+                Мне-Нужна-Длинная-Улица 48, к. 1
+              </h5>
+              <h6 class="catalog__cards-station">Китай-Город</h6>
+              <p class="catalog__cards-price">550 руб./час</p>
+            </div>
+          </a>
+          <a href="" class="catalog__cards-item">
+            <img
+                src="static/images/catalog-card.jpg"
+                alt=""
+                class="catalog__cards-cover"
+            />
+            <div class="catalog__cards-description">
+              <h5 class="catalog__cards-address">
+                Мне-Нужна-Длинная-Улица 48, к. 1
+              </h5>
+              <h6 class="catalog__cards-station">Китай-Город</h6>
+              <p class="catalog__cards-price">550 руб./час</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <div class="footer__top">
+        <h5 class="footer__title">Парковки Москвы</h5>
+        <h6 class="footer__subtitle">
+          Сервис для краткосрочной аренды машиномест в Москве
+        </h6>
+      </div>
+      <div class="footer__links">
+        <a href="" class="footer__links-item"
+        >Условия использования</a
+        >
+        <a href="" class="footer__links-item"
+        >Договор оферты</a
+        >
+        <a href="" class="footer__links-item"
+        >Служба поддержки</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="static/plugins/noUiSlider-15.7.0/dist/nouislider.js"></script>
+<script src="static/js/homeButtonScript.js"></script>
+<script src="static/js/index.js"></script>
+<script src="static/js/user.js"></script>
+<script src="static/js/parking-place.js"></script>
+</body>
+</html>

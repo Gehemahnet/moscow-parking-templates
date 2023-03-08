@@ -1,12 +1,37 @@
+const paths = [
+    {
+        file: 'index',
+        link: 'Главная'
+    },
+    {
+        file: 'catalog',
+        link: 'Каталог'
+    },
+    {
+        file: 'parking-place-info',
+        link: 'Каталог'
+    },
+    {
+        file: 'parking-place-create',
+        link: 'Личный кабинет'
+    },
+    {
+        file: 'profile',
+        link: 'Личный кабинет'
+    }
+]
 function initialization() {
-    let body = document.querySelector("body")
+    let location = window.location.pathname.split('/')[2].split('.')[0]
     document.querySelectorAll('.header__nav-link').forEach(link => {
-        link.dataset.hrefTo === body.dataset.location && link.classList.add('active')
+        paths.forEach(path => {
+            if (path.file === location && link.innerText === path.link) {
+                link.classList.add('active')
+            }
+        })
     })
 }
 
 function showHeaderNavigation() {
-    let header = document.querySelector('.header')
     let navigation = document.querySelector('.header__nav')
     let burger = document.querySelector('.header__nav-burger')
     let overlay = document.querySelector('.overlay')
