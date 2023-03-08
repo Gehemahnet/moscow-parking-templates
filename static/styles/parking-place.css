@@ -370,6 +370,7 @@
     height: auto;
     border-radius: 50%;
     z-index: 1;
+    align-self: center;
   }
 
   .parking-place__form {

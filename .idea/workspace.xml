@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="902b1642-d68c-4b8f-a97a-7628cbe7ad26" name="Changes" comment="Catalog started">
-      <change afterPath="$PROJECT_DIR$/parking-place-create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking-place-info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icons/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/parking-place.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/catalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles/parking-place.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/parking-place.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -101,7 +89,7 @@
       <workItem from="1678217545399" duration="733000" />
       <workItem from="1678256246941" duration="12171000" />
       <workItem from="1678271396596" duration="215000" />
-      <workItem from="1678277146808" duration="13279000" />
+      <workItem from="1678277146808" duration="13950000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
