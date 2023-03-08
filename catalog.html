@@ -1,165 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=23499f37-148f-4209-a58a-0ff8a2a25941&lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <title>Парковки Москвы</title>
-    <link rel="stylesheet" type="text/css" href="static/styles/catalog.css" />
-    <link rel="icon" type="image/x-icon" href="static/icons/favicon.svg" />
-  </head>
-  <body data-location="catalog">
-    <header class="header">
-      <div class="wrapper">
-        <div class="header__content">
-          <a class="header__logo" href="index.html">
-            <img src="static/icons/logo.svg" alt="" />
-            <h2 class="header__title">Парковки Москвы</h2>
-          </a>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=""/>
+  <meta name="author" content="Konstantin Volik"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=23499f37-148f-4209-a58a-0ff8a2a25941&lang=ru_RU"
+            type="text/javascript">
+    </script>
+  <title>Парковки Москвы</title>
+  <link rel="stylesheet" type="text/css" href="static/styles/catalog.css">
+  <link rel="icon" type="image/x-icon" href="static/icons/favicon.svg">
+</head>
+<body>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__content">
+      <a class="header__logo" href="index.html">
+        <img src="static/icons/logo.svg" alt="">
+        <h2 class="header__title">
+          Парковки Москвы
+        </h2>
+      </a>
+      
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Главная</a>
+        <a href="catalog.html" class="header__nav-link">Каталог</a>
+        <a href="profile.html" class="header__nav-link">Личный кабинет</a>
+      </nav>
+      <button onclick="showHeaderNavigation()" class="header__nav-burger"></button>
+    </div>
+  </div>
+</header>
+<div class="overlay"></div>
+<div class="modal"></div>
 
-          <nav class="header__nav">
-            <a data-href-to="home" href="index.html" class="header__nav-link">
-              Главная
-            </a>
-            <a
-              data-href-to="catalog"
-              href="catalog.html"
-              class="header__nav-link"
-            >
-              Каталог
-            </a>
-            <a
-              data-href-to="profile"
-              href="profile.html"
-              class="header__nav-link"
-            >
-              Личный кабинет
-            </a>
-          </nav>
-          <button
-            onclick="showHeaderNavigation()"
-            class="header__nav-burger"
-          ></button>
+<main class="main">
+  <button class="scroll-button"><img src="static/icons/scroll-button.svg" alt=""></button>
+  <section class="map">
+    <div id="map" class="map__content"></div>
+  </section>
+  <section class="catalog">
+    <div class="wrapper">
+      <div class="catalog__content">
+        <div class="catalog__header">
+          <h2 class="catalog__title">
+            Каталог
+          </h2>
+          <h5 class="catalog__subtitle">
+            Найдите нужное место на карте или через поиск по каталогу
+          </h5>
         </div>
-      </div>
-    </header>
-    <div class="overlay"></div>
-    <div class="modal"></div>
+        <div class="catalog__main">
+          <div class="catalog__search-block">
 
-    <main class="main">
-      <button class="scroll-button">
-        <img src="static/icons/scroll-button.svg" alt="" />
-      </button>
-      <section class="map">
-        <div id="map" class="map__content"></div>
-      </section>
-      <section class="catalog">
-        <div class="wrapper">
-          <div class="catalog__content">
-            <div class="catalog__header">
-              <h2 class="catalog__title">Каталог</h2>
-              <h5 class="catalog__subtitle">
-                Найдите нужное место на карте или через поиск по каталогу
-              </h5>
+            <label class="catalog__label">Поиск</label>
+            <div class="catalog__search-block-actions">
+              <input
+                  placeholder="Введите название улицы..."
+                  id="search"
+                  type="search"
+                  class="catalog__search-block-input"
+              >
+              <button class="catalog__search-block-filters" onclick="toggleFilters()">
+                <img src="static/icons/filter.svg" alt="">
+              </button>
             </div>
-            <div class="catalog__main">
-              <div class="catalog__search-block">
-                <label class="catalog__label">Поиск</label>
-                <div class="catalog__search-block-actions">
+
+            <div class="catalog__filters">
+              <div class="catalog__filters-select-field">
+                <label class="catalog__filters-label">Ближайшая станция метро</label>
+                <div
+                    id="stations"
+                    class="catalog__filters-select"
+                >
                   <input
-                    placeholder="Введите название улицы..."
-                    id="search"
-                    type="search"
-                    class="catalog__search-block-input"
+                      placeholder="Начните вводить название..."
+                      type="text"
+                      class="catalog__filters-select-input"
+                      onclick="showStationsDropdown(this)"
                   />
-                  <button
-                    class="catalog__search-block-filters"
-                    onclick="toggleFilters()"
-                  >
-                    <img src="static/icons/filter.svg" alt="" />
-                  </button>
+
+                  <div class="catalog__filters-dropdown">
+                    <!--Здесь все станции из массива STATIONS в срипте каталог-->
+                  </div>
+
                 </div>
 
-                <div class="catalog__filters">
-                  <div class="catalog__filters-select-field">
-                    <label class="catalog__filters-label"
-                      >Ближайшая станция метро</label
-                    >
-                    <div id="stations" class="catalog__filters-select">
-                      <input
-                        placeholder="Начните вводить название..."
-                        type="text"
-                        class="catalog__filters-select-input"
-                        onclick="showStationsDropdown(this)"
-                      />
+              </div>
+              <div class="catalog__filters-field">
+                <div class="catalog__filters-range-labels">
+                  <label class="catalog__filters-label">Цена</label>
+                  <label id="price-display" class="catalog__filters-label">
+                    <span id="startPrice"></span> - <span id="endPrice"></span>
+                  </label>
+                </div>
+                <div class="catalog__filters-range-container">
 
-                      <div class="catalog__filters-dropdown">
-                        <!--Здесь все станции из массива STATIONS в срипте каталог-->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="catalog__filters-field">
-                    <div class="catalog__filters-range-labels">
-                      <label class="catalog__filters-label">Цена</label>
-                      <label id="price-display" class="catalog__filters-label">
-                        <span id="startPrice"></span> -
-                        <span id="endPrice"></span>
-                      </label>
-                    </div>
-                    <div class="catalog__filters-range-container"></div>
-                    <div class="catalog__filters-range-indicators">
-                      <label class="catalog__filters-label">0</label>
-                      <label class="catalog__filters-label">2500</label>
-                      <label class="catalog__filters-label">5000</label>
-                    </div>
-                  </div>
-                  <div class="catalog__filters-tags">
-                    <!--Сюда пихаем фильтры станций-->
-                  </div>
+                </div>
+                <div class="catalog__filters-range-indicators">
+                  <label class="catalog__filters-label">0</label>
+                  <label class="catalog__filters-label">2500</label>
+                  <label class="catalog__filters-label">5000</label>
                 </div>
               </div>
-              <div class="catalog__cards">
-                <!--Блок для карточек-->
+              <div class="catalog__filters-tags">
+                <!--Сюда пихаем фильтры станций-->
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer__content">
-          <div class="footer__top">
-            <h5 class="footer__title">Парковки Москвы</h5>
-            <h6 class="footer__subtitle">
-              Сервис для краткосрочной аренды машиномест в Москве
-            </h6>
-          </div>
-          <div class="footer__links">
-            <a data-href-to="home" href="" class="footer__links-item"
-              >Условия использования</a
-            >
-            <a data-href-to="catalog" href="" class="footer__links-item"
-              >Договор оферты</a
-            >
-            <a data-href-to="support" href="" class="footer__links-item"
-              >Служба поддержки</a
-            >
+          <div class="catalog__cards">
+            <!--Блок для карточек-->
           </div>
         </div>
       </div>
-    </footer>
-    <script src="static/plugins/noUiSlider-15.7.0/dist/nouislider.js"></script>
-    <script src="static/js/homeButtonScript.js"></script>
-    <script src="static/js/index.js"></script>
-    <script src="static/js/catalog.js"></script>
-    <script src="static/js/map.js"></script>
-    <script src="static/js/user.js"></script>
-  </body>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <div class="footer__top">
+        <h5 class="footer__title">Парковки Москвы</h5>
+        <h6 class="footer__subtitle">Сервис для краткосрочной аренды машиномест в Москве</h6>
+      </div>
+      <div class="footer__links">
+        <a href="index" class="footer__links-item">Условия использования</a>
+        <a href="" class="footer__links-item">Договор оферты</a>
+        <a href="" class="footer__links-item">Служба поддержки</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="static/plugins/noUiSlider-15.7.0/dist/nouislider.js"></script>
+<script src="static/js/homeButtonScript.js"></script>
+<script src="static/js/index.js"></script>
+<script src="static/js/catalog.js"></script>
+<script src="static/js/map.js"></script>
+<script src="static/js/user.js"></script>
+</body>
 </html>

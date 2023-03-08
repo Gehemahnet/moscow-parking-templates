@@ -30,12 +30,12 @@ function toggleModal() {
         if (element.style.display === 'block') {
             element.style.display = 'none'
             document.body.style.overflow = 'auto'
-            document.body.classList.toggle('using-popup')
+            document.body.classList.remove('using-popup')
             document.querySelector('.modal').removeEventListener('click', toggleModal)
         } else {
             element.style.display = 'block'
             document.body.style.overflow = 'hidden'
-            document.body.classList.toggle('using-popup')
+            document.body.classList.add('using-popup')
             document.querySelector('.modal').addEventListener('click', toggleModal)
         }
     }

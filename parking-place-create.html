@@ -1,150 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Парковки Москвы</title>
-    <link rel="stylesheet" type="text/css" href="static/styles/catalog.css" />
-    <link
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Парковки Москвы</title>
+  <link rel="stylesheet" type="text/css" href="static/styles/catalog.css"/>
+  <link
       rel="stylesheet"
       type="text/css"
       href="static/styles/parking-place.css"
-    />
-    <link rel="icon" type="image/x-icon" href="static/icons/favicon.svg" />
-  </head>
-  <body data-location="parking-place-info">
-    <header class="header">
-      <div class="wrapper">
-        <div class="header__content">
-          <a class="header__logo" href="index.html">
-            <img src="static/icons/logo.svg" alt="" />
-            <h2 class="header__title">Парковки Москвы</h2>
-          </a>
+  />
+  <link rel="icon" type="image/x-icon" href="static/icons/favicon.svg"/>
+</head>
+<body>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__content">
+      <a class="header__logo" href="index.html">
+        <img src="static/icons/logo.svg" alt=""/>
+        <h2 class="header__title">Парковки Москвы</h2>
+      </a>
 
-          <nav class="header__nav">
-            <a data-href-to="home" href="index.html" class="header__nav-link">
-              Главная
-            </a>
-            <a
-              data-href-to="catalog"
-              href="catalog.html"
-              class="header__nav-link"
-            >
-              Каталог
-            </a>
-            <a
-              data-href-to="profile"
-              href="profile.html"
-              class="header__nav-link"
-            >
-              Личный кабинет
-            </a>
-          </nav>
-          <button
-            onclick="showHeaderNavigation()"
-            class="header__nav-burger"
-          ></button>
-        </div>
-      </div>
-    </header>
-    <div class="overlay"></div>
-    <div class="modal"></div>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Главная</a>
+        <a href="catalog.html" class="header__nav-link">Каталог</a>
+        <a href="profile.html" class="header__nav-link">Личный кабинет</a>
+      </nav>
+      <button
+          onclick="showHeaderNavigation()"
+          class="header__nav-burger"
+      ></button>
+    </div>
+  </div>
+</header>
+<div class="overlay"></div>
+<div class="modal"></div>
 
-    <main class="main">
-      <button class="scroll-button">
-        <img src="static/icons/scroll-button.svg" alt="" />
-      </button>
-
-      <section class="container">
-        <div class="wrapper">
-          <div class="parking-place">
-            <div class="parking-place__img parking-place__img_create"></div>
-
-            <div
-              class="parking-place__description parking-place__description_form"
-            >
-              <h2 class="title title_parking-place-create">
-                Добавление нового места
-              </h2>
-              <form>
-                <label class="label">
-                  Адрес (улица, ближайший дом)
-                  <input class="input" placeholder="Казанская, 55" />
-                </label>
-
-                <div class="parking-place__price-metro">
-                  <label class="label label_price">
-                    Цена за час
-                    <input class="input" placeholder="100" />
-                  </label>
-
-                  <label class="label label_metro">
-                    Ближайшее метро
-                    <input class="input" placeholder="Театральная" />
-                  </label>
-                </div>
-
-                <label class="label">
-                  Описание
-                  <textarea
-                    class="textarea textarea_parking-place-create"
-                    placeholder="Расскажите о своем месте подробнее..."
-                  ></textarea>
-                </label>
-
-                <label class="label">
-                  Статус<br />
-                  <select class="select select_parking-place-create">
-                    <option value="Доступно" class="option">Доступно</option>
-                    <option value="Не доступно" class="option">
-                      Не доступно
-                    </option>
-                  </select>
-                </label>
-
-                <p class="parking-place__detail-description">
-                  Ваше место видно в каталоге и доступно для брони
-                </p>
-
-                <div class="parking-place__create-buttons">
-                  <button class="button button_secondary">Отмена</button>
-                  <button class="button button_primary">Сохранить</button>
-                </div>
-              </form>
+<main class="main">
+  <button class="scroll-button">
+    <img src="static/icons/scroll-button.svg" alt=""/>
+  </button>
+  <section class="parking-place">
+    <div class="wrapper">
+      <div class="parking-place__content create">
+        <button class="parking-place__cover" onclick="selectPhoto()">
+          <input class="parking-place__photo" type="file" style="visibility:hidden;">
+        </button>
+        <form class="parking-place__form">
+          <h2 class="parking-place__form-title">Добавление нового места</h2>
+          <div class="parking-place__form-field">
+            <label class="parking-place__form-label">
+              Адрес (улица, ближайший дом)
+            </label>
+            <input type="text" class="parking-place__form-input" placeholder="Казанская, 55">
+          </div>
+          <div class="parking-place__form-double">
+            <div class="parking-place__form-field">
+              <label class="parking-place__form-label">
+                Цена за час
+              </label>
+              <input type="text" class="parking-place__form-input" placeholder="100">
+            </div>
+            <div class="parking-place__form-field">
+              <label class="parking-place__form-label">
+                Ближайшее метро
+              </label>
+              <input type="text" class="parking-place__form-input" placeholder="Театральная">
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer__content">
-          <div class="footer__top">
-            <h5 class="footer__title">Парковки Москвы</h5>
-            <h6 class="footer__subtitle">
-              Сервис для краткосрочной аренды машиномест в Москве
-            </h6>
+          <div class="parking-place__form-field">
+            <label class="parking-place__form-label">
+              Описание
+            </label>
+            <textarea
+                placeholder="Расскажите о своем месте подробнее..."
+                class="parking-place__form-textarea"
+            >
+            </textarea>
           </div>
-          <div class="footer__links">
-            <a data-href-to="home" href="" class="footer__links-item"
-              >Условия использования</a
-            >
-            <a data-href-to="catalog" href="" class="footer__links-item"
-              >Договор оферты</a
-            >
-            <a data-href-to="support" href="" class="footer__links-item"
-              >Служба поддержки</a
-            >
+          <div class="parking-place__form-field">
+            <label class="parking-place__form-label">Статус</label>
+            <select name="possibility" class="parking-place__form-select">
+              <option value="available">Доступно</option>
+              <option value="archived">В архиве</option>
+            </select>
           </div>
-        </div>
+          <h4 class="parking-place__station">Ваше место видно в каталоге и доступно для брони</h4>
+          <div class="parking-place__form-buttons">
+            <button class="parking-place__button-back" type="button" onclick="back()">Отмена</button>
+            <button class="parking-place__button-rent" type="submit" onclick="rent()">Сохранить</button>
+          </div>
+        </form>
       </div>
-    </footer>
-    <script src="static/plugins/noUiSlider-15.7.0/dist/nouislider.js"></script>
-    <script src="static/js/homeButtonScript.js"></script>
-    <script src="static/js/index.js"></script>
-    <script src="static/js/user.js"></script>
-  </body>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <div class="footer__top">
+        <h5 class="footer__title">Парковки Москвы</h5>
+        <h6 class="footer__subtitle">
+          Сервис для краткосрочной аренды машиномест в Москве
+        </h6>
+      </div>
+      <div class="footer__links">
+        <a href="" class="footer__links-item">Условия использования</a>
+        <a href="" class="footer__links-item">Договор оферты</a>
+        <a href="" class="footer__links-item">Служба поддержки</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="static/plugins/noUiSlider-15.7.0/dist/nouislider.js"></script>
+<script src="static/js/homeButtonScript.js"></script>
+<script src="static/js/index.js"></script>
+<script src="static/js/user.js"></script>
+<script src="static/js/parking-place.js"></script>
+</body>
 </html>

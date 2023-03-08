@@ -4,49 +4,49 @@ const places = [
         station: "Китай-Город",
         price: 150,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
     {
         address: "Мне-Нужна-Длинная-Улица 48, к. 1",
         station: "Китай-Город",
         price: 150,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
     {
         address: "Мне-Нужна-Длинная-Улица 48, к. 1",
         station: "Китай-Город",
         price: 450,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
     {
         address: "Мне-Нужна-Длинная-Улица 48, к. 1",
         station: "Китай-Город",
         price: 550,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
     {
         address: "Мне-Нужна-Длинная-Улица 48, к. 1",
         station: "Китай-Город",
         price: 650,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
     {
         address: "Мне-Нужна-Длинная-Улица 48, к. 1",
         station: "Китай-Город",
         price: 2550,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
     {
         address: "Мне-Нужна-Длинная-Улица 48, к. 1",
         station: "Китай-Город",
         price: 1550,
         cover: "static/images/catalog-card.jpg",
-        link: ""
+        link: "parking-place-info.html"
     },
 
 ]

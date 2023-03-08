@@ -1,145 +1,535 @@
 @import "global.css";
 
 .parking-place {
-    display: flex;
-    flex-direction: row;
-    column-gap: 1.25rem;
-    margin-bottom: 40px;
-}
-.parking-place__img {
-    flex: 1;
-    background: url(../images/catalog-card-big.jpg) center center;
-    background-size: cover;
-    border-radius: var(--radius);
-    height: 380px;
-}
-.parking-place__img_create {
-    background: url(../images/plus.svg) center center no-repeat white;
-    background-size: auto;
-}
-.parking-place__description {
-    flex: 1;
-    padding: 1rem 0;
-}
-.parking-place__description_form {
-    padding: 0;
-}
-.parking-place__detail-description {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.5rem;
-    height: 3rem;
-    overflow: hidden;
-}
-.parking-place__detail-description_expanded {
-    height: auto;
-    overflow: auto;
-}
-#more {
-    color: var(--secondary-color);
-}
-.parking-place__oner {
-    margin-bottom: 30px;
-}
-.h3_parking-place {
-    margin: 0px 0 10px;
-    font-size: 1.25rem;
-    /* line-height: 1rem; */
-    color: rgba(0, 0, 0, 0.75);
-    font-weight: 400;
-}
-.h5_parking-place {
-    margin: 20px 0 5px;
-    font-size: 1rem;
-    font-weight: 400;
-}
-.parking-place__price-metro {
-    display: flex;
-    column-gap: 1.25rem;
-}
-.label_price {
-    flex: 3.8;
-}
-.label_metro {
-    flex: 6.2;
-}
-.title_parking-place-create {
-    margin-bottom: 1.5rem;
-}
-.textarea_parking-place-create {
-    height: 13rem;
-}
-.select_parking-place-create {
-    width: 55%;
-}
-.parking-place__create-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+  max-width: 60rem;
+  margin: 30px auto 0;
 }
 
+.parking-place .wrapper {
+  width: 100%;
+}
+
+.parking-place__content {
+  display: flex;
+  gap: 20px;
+}
+
+.parking-place__cover {
+  width: 470px;
+  height: 380px;
+  border-radius: 80px;
+  flex: 1;
+}
+
+.parking-place__content.create .parking-place__cover {
+  background: white no-repeat center center url("../icons/plus.svg");
+  width: 470px;
+  height: 380px;
+  border-radius: 80px;
+}
+
+.parking-place__cover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+}
+
+.parking-place__owner {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  margin-bottom: 30px;
+}
+
+.parking-place__description {
+  flex: 1;
+}
+
+.parking-place__address {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 39px;
+}
+
+.parking-place__station {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking-place__actions {
+  margin: 20px 0 30px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.parking-place__button-rent {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  padding: 15px 20px;
+  background: var(--secondary-color);
+}
+
+.parking-place__button-back {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking-place__description-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.parking-place__description-detailed {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.parking-place__description-detailed.expanded {
+  height: auto;
+  overflow: auto;
+}
+
+.parking-place__button-expanding {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+}
+
+.parking-place__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  width: 472px;
+  margin-bottom: 120px;
+}
+
+.parking-place__form-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 20px;
+}
+
+.parking-place__form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.parking-place__form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.parking-place__form-input {
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking-place__form-double {
+  display: flex;
+  gap: 20px;
+}
+
+.parking-place__form-double .parking-place__form-field:first-child {
+  width: 176px;
+}
+
+.parking-place__form-textarea {
+  height: 222px;
+  overflow: auto;
+  resize: none;
+  padding: 15px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 5px;
+  border: none;
+}
+
+.parking-place__form-select {
+  padding: 15px 20px;
+  background: white url("../icons/dropdown.svg") top 24px right 24px no-repeat;
+  width: 274px;
+  appearance: none;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.parking-place__form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+
 @media screen and (min-width: 600px) and (max-width: 1199px) {
-    .parking-place {
-        display: block;
-    }
-    .parking-place__img {
-        width: 99vw;
-        height: 550px;
-        margin: -105px calc(50% - 50vw) 0;
-        border-radius: 0 0 65px 65px;
-    }
-    .parking-place__oner {
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-    .h3_parking-place {
-        font-size: 15px;
-        margin-top: 0;
-    }
-    .parking-place__detail-description {
-        font-size: 1rem;
-        height: auto;
-    }
-    #more {
-        display: none;
-    }
+  .parking-place {
+    margin-top: 0;
+  }
+  .parking-place__content {
+    flex-direction: column;
+  }
+  .parking-place__content.create {
+    flex-direction: row;
+    max-width: 800px;
+    margin: 20px 20px 0;
+  }
+
+  .parking-place__content.create .parking-place__cover {
+    max-height: 240px;
+    max-width: 240px;
+    flex: 1;
+  }
+
+  .parking-place__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    width: 472px;
+    margin-bottom: 60px;
+  }
+
+  .parking-place__form-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .parking-place__form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .parking-place__form-label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__form-input {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__form-double .parking-place__form-field:first-child {
+    width: auto;
+    flex: 0;
+  }
+  .parking-place__form-double .parking-place__form-field:last-child {
+    flex: 2;
+    width: auto;
+  }
+
+  .parking-place__form-textarea {
+    height: 222px;
+    overflow: auto;
+    resize: none;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .parking-place__form-select {
+    padding: 10px 15px;
+    background: white url("../icons/dropdown.svg") top 16px right 16px no-repeat;
+    width: 274px;
+    appearance: none;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .parking-place__cover {
+    width: 100%;
+    border-radius: 0 0 65px 65px;
+  }
+
+  .parking-place__cover img {
+    border-radius: 0 0 65px 65px;
+  }
+
+
+  .parking-place__description {
+    margin: 0 20px;
+  }
+
+  .parking-place__owner {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+
+  .parking-place__address {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .parking-place__station {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__actions {
+    gap: 50px;
+    margin: 20px 0 25px;
+  }
+
+  .parking-place__button-rent {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 10px 15px;
+  }
+
+  .parking-place__button-back {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__description-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking-place__description-detailed {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    height: auto;
+  }
+
+  .parking-place__button-expanding {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 599px) {
-    .parking-place {
-        display: block;
-        margin-bottom: 0;
-    }
-    .parking-place__img {
-        width: 99vw;
-        height: 99vw;
-        margin: -105px calc(50% - 50vw) 0;
-        border-radius: 0 0 65px 65px;
-    }
-    .parking-place__oner {
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-    .h3_parking-place {
-        font-size: 15px;
-        margin-top: 0;
-    }
-    .parking-place__detail-description {
-        font-size: 1rem;
-        height: auto;
-    }
-    #more {
-        display: none;
-    }
-    .parking-place__description {
-        width: 99vw;
-        margin: -105px calc(50% - 50vw) 0;
-        padding: 35px 20px 20px;
-        /* background: linear-gradient(359.7deg, #ededed 97.58%, rgba(237, 237, 237, 0) 103.88%); */
-        background: #ededed;
-        border-radius: 50px;
-    }
-    .select_parking-place-create {
-        width: 100%;
-    }
+  .parking-place {
+    max-width: 600px;
+    margin-top: 0;
+  }
+  .parking-place__content.create {
+    margin: 20px 20px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .parking-place__content.create .parking-place__cover {
+    max-height: 300px;
+    max-width: 300px;
+    flex: 1;
+    min-height: 250px;
+    min-width: 250px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    z-index: 1;
+    align-self: center;
+  }
+
+  .parking-place__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .parking-place__form-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .parking-place__form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .parking-place__form-label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__form-input {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__form-double {
+    flex-direction: column;
+  }
+
+  .parking-place__form-double .parking-place__form-field:first-child {
+    width: auto;
+    flex: 0;
+  }
+
+  .parking-place__form-double .parking-place__form-field:last-child {
+    flex: 2;
+    width: auto;
+  }
+
+  .parking-place__form-textarea {
+    height: 222px;
+    overflow: auto;
+    resize: none;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .parking-place__form-select {
+    padding: 10px 15px;
+    background: white url("../icons/dropdown.svg") top 16px right 16px no-repeat;
+    width: 274px;
+    appearance: none;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+
+
+  .parking-place__content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .parking-place__cover {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 353px;
+    border-radius: 0;
+  }
+
+  .parking-place__cover img {
+    border-radius: 0;
+  }
+
+  .parking-place__description {
+    margin-top: -60px;
+    padding: 30px 20px 0;
+    background: rgba(237, 237, 237, 0.95);
+    border-radius: 50px;
+  }
+
+  .parking-place__owner {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+
+  .parking-place__address {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .parking-place__station {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__actions {
+    gap: 50px;
+    margin: 20px 0 25px;
+  }
+
+  .parking-place__button-rent {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 10px 15px;
+  }
+
+  .parking-place__button-back {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .parking-place__description-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .parking-place__description-detailed {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    height: auto;
+  }
+
+  .parking-place__button-expanding {
+    display: none;
+  }
+
 }
